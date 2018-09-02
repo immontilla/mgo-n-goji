@@ -1,0 +1,28 @@
+{
+  "name": "mgo-n-goji-tests",
+  "version": "1.0.0",
+  "description": "Using Newman & Postman to test mgo-n-goji",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "sh -ac ./runTestReportCLI.sh",
+    "test-n-report": "sh -ac ./runTestReportHTML.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/immontilla/mgo-n-goji"
+  },
+  "keywords": [
+    "go",
+    "goji",
+    "postman",
+    "newman"
+  ],
+  "author": "immontilla",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^4.1.0",
+    "newman-reporter-html": "^1.0.1",
+    "express": "^4.16.3"
+  }
+}

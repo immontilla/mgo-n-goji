@@ -1,0 +1,5 @@
+const express = require('express')
+const app = express()
+app.use(express.static(__dirname + '/reports'))
+app.get('/', (req, res) => res.redirect('tests-results.html'))
+app.listen(4444, () => console.log('Open your browser at http://localhost:4444'))
